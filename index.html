@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>TOMA DE DECISIONES - AHP  </title>
+		<title>ruteo  </title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -272,7 +272,7 @@
 						alt="logo" style="height: 100px;  " class="demo-logo">
 					</a>
 					
-					<h3>Análisis de decisiones</h3>
+					<h3>RUTEO DE VEHICULOS</h3>
 					
 					</section>
 				<section data-auto-animate data-auto-animate-unmatched="fade" data-background="#003865">
@@ -281,706 +281,404 @@
 						alt="logo" style="height: 100px;  " class="demo-logo">
 					</a>
 					
-					<h3 style="opacity: 0.2; margin-top: 50px;">Análisis de decisiones</h3>
+					<h3 style="opacity: 0.2; margin-top: 50px;">RUTEO DE VEHICULOS</h3>
 							
-							<p><span style="color:orange">Teoría multicriterio y AHP</span> </p>
+							<p><span style="color:orange">TSP,VRP,CVRP,CVRPTW</span> </p>
 
 				</section>	
 
-				<section data-transition="zoom">
-					<h3>Introducción 💡</h3>
-					<p>La toma de decisiones es un proceso crucial tanto para individuos como para
-					organizaciones, enfrentando decisiones difíciles con consecuencias significativas. Este
-					proceso se caracteriza por:</p>
-					
-						<div class="r-stack">
-							<p class="fragment fade-in-then-out" style="color:rgb(255, 47, 0)">1. Intereses en conflicto</p>
-							<p class="fragment fade-in-then-out" style="color:rgb(102, 0, 255)">2. Elementos de incertidumbre</p>
-							<p class="fragment fade-in-then-out" style="color:rgb(230, 0, 255)">3. Involucramiento de distintas personas</p>
-							<p class="fragment fade-in-then-out" style="color:rgb(0, 255, 68)">4. Elementos medibles y difíciles de medir</p>
-						</div>
-				</section>
-
-				<section data-transition="zoom">
-					<h3>Introducción 💡</h3>
-					<div class="custom-title"> Barba Romero</div>
-					<div class="custom-box">
-					Tomar decisiones es una de las facetas más relevantes de cualquier puesto de responsabilidad.
-					</div>
-					<div>
-					<p></p>
-					</div>
-					<div class="custom-title">Stanfford Beer</div>
-					<div class="custom-box">
-					El verdadero proceso de tomar decisiones involucra muchas personas y toda la estructura esta impregnada con retroalimentación.
-					</div>
-				</section>
-				
-				<section data-transition="zoom">
-					<h3>Introducción 💡</h3>
-							<div class="custom-title">Multiple Criteria Decision Making
-								 </div>
-							<div class="combined-box">
-								<div class="text-section">
-									<p>“Cada vez es mas difícil ver el mundo que nos rodea de una forma unidimensional y usar solamente un criterio para juzgar lo que vemos”</p>								</div>
-								<div class="image-section">
-									<img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Professor_Milan_Zeleny.jpg" alt="Descripción" class="round-image">
-									<div class="caption-text" ><p class="texto-pequeno">Milan Zeleny</p></div>
-								</div>
-							</div>
-						</section>
-					
-						
-					
-						<section>
-							<div class="timeline-indicator">Siglo IV a.C. --------------------------------------------------------------→ 1926</div>
-							<div class="timeline">
-								<div class="timeline-item" data-year="Siglo IV a.C">
-									<img src="https://www.psicoactiva.com/wp-content/uploads/2017/10/aristoteles.jpg" alt="Aristoteles" class="timeline-image">
-									<p class="timeline-caption">Aristoteles</p>
-									<div class="info-card">
-										<h5>Siglo IV a.C - Aristoteles</h5>
-										<p><small>En su libro ÉTICA A NICÓMACO Define deseos racionales y preferencias.</small></p>
-									</div>
-								</div>
-						
-								<!-- Bernoulli -->
-								<div class="timeline-item" data-year="1738">
-									<img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/ETH-BIB-Bernoulli%2C_Daniel_%281700-1782%29-Portrait-Portr_10971.tif_%28cropped%29.jpg" alt="Bernoulli" class="timeline-image">
-									<p class="timeline-caption">Bernoulli</p>
-									<div class="info-card">
-										<h4>1738 - Bernoulli</h4>
-										<p>Paradoja de san petesburgo.</p>
-									</div>
-								</div>
-						
-								<!-- B.Franklin -->
-								<div class="timeline-item" data-year="1772">
-									<img src="https://cdn.britannica.com/72/110272-159-A0A4BCB5/Benjamin-Franklin.jpg" alt="B.Franklin" class="timeline-image">
-									<p class="timeline-caption">B.Franklin</p>
-									<div class="info-card">
-										<h4>1772 - B.Franklin</h4>
-										<p>Algebra moral o prudencial.</p>
-									</div>
-								</div>
-						
-								<!-- de Borda -->
-								<div class="timeline-item" data-year="1781">
-									<img src="https://mathshistory.st-andrews.ac.uk/Biographies/Borda/borda.jpg" alt="de Borda" class="timeline-image">
-									<p class="timeline-caption">de Borda</p>
-									<div class="info-card">
-										<h4>1781 - de Borda</h4>
-										<p>Rankings resumidos.</p>
-									</div>
-								</div>
-						
-								<!-- Condorcet -->
-								<div class="timeline-item" data-year="1785">
-									<img src="https://www.worldhistory.org/img/r/p/500x600/15428.jpg?v=1666433763" alt="Condorcet" class="timeline-image">
-									<p class="timeline-caption">Condorcet</p>
-									<div class="info-card">
-										<h4>1785 - Condorcet</h4>
-										<p>Decisiones mayoritarias.</p>
-									</div>
-								</div>
-									<!-- Francis Edgeworth -->
-<div class="timeline-item" data-year="1881">
-    <img src="https://mathshistory.st-andrews.ac.uk/Biographies/Edgeworth/Edgeworth_2.jpeg" alt="Francis Edgeworth" class="timeline-image">
-    <p class="timeline-caption">Francis Edgeworth</p>
-    <div class="info-card">
-        <h4>1881 - Francis Edgeworth</h4>
-        <p>Caja Edgeworth.</p>
-    </div>
-</div>
-
-<!-- Cantor -->
-<div class="timeline-item" data-year="1895-1897">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Georg_Cantor2.jpg" alt="Georg Cantor" class="timeline-image">
-    <p class="timeline-caption">Georg Cantor</p>
-    <div class="info-card">
-        <h4>1895-1897 - Georg Cantor</h4>
-        <p>Espacios ordenados en dimensiones infinitas.</p>
-    </div>
-</div>
-
-<!-- Hausdorff -->
-<div class="timeline-item" data-year="1906">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSayf4NgDVeYliQAZADG-R4nVGJ6cK8jvtdjef1G1hnBA&s" alt="Felix Hausdorff" class="timeline-image">
-    <p class="timeline-caption">Felix Hausdorff</p>
-    <div class="info-card">
-        <h4>1906 - Felix Hausdorff</h4>
-        <p>Primer ejemplo de un ordenamiento completo.</p>
-    </div>
-</div>
-
-<!-- Vilfredo Pareto -->
-<div class="timeline-item" data-year="1906">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Vilfredo_Pareto_1870s2.jpg" alt="Vilfredo Pareto" class="timeline-image">
-    <p class="timeline-caption">Vilfredo Pareto</p>
-    <div class="info-card">
-        <h4>1906 - Vilfredo Pareto</h4>
-        <p>Eficiencia de Pareto en cajas Edgeworth.</p>
-    </div>
-</div>
-
-<!-- Frank P. Ramsey -->
-<div class="timeline-item" data-year="1926">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/30._Frank_Ramsey.jpg" alt="Frank P. Ramsey" class="timeline-image">
-    <p class="timeline-caption">Frank P. Ramsey</p>
-    <div class="info-card">
-        <h4>1926 - Frank P. Ramsey</h4>
-        <p>Primer conjunto de axiomas para selección de alternativas con pagos inciertos (modelo de utilidad subjetiva).</p>
-    </div>
-</div>
-
-
-						</section>
-						<section>
-						<h1>Introducción al MCDM</h1>
-						<p>Multi-Criteria Decision Making (MCDM) se refiere al proceso de tomar decisiones en presencia de múltiples criterios.</p>
-					</section>
-		
-					<section>
-						<h2>Las Alternativas</h2>
-						<p>En MCDM, las alternativas son las opciones disponibles entre las cuales se debe elegir.</p>
-					</section>
-		
-					<section>
-						<h2>Los Criterios</h2>
-						<p>Los criterios son los distintos factores o atributos que se consideran importantes para evaluar las alternativas.</p>
-					</section>
-		
-					<section>
-						<h2>Los Participantes</h2>
-						<p>Los participantes en el proceso de MCDM pueden ser individuos o grupos con el poder de tomar decisiones o influir en ellas.</p>
-					</section>
-		
-					<section>
-						<h2>La Matriz de Decisión</h2>
-						<p>La matriz de decisión es una herramienta clave en MCDM, organizando alternativas (filas) y criterios (columnas).</p>
-						<p>Por ejemplo, si tenemos alternativas \(A_1, A_2, \ldots, A_n\) y criterios \(C_1, C_2, \ldots, C_m\), la matriz se vería así:</p>
-						\[ \begin{array}{c|ccc}
-						& C_1 & \ldots & C_m \\
-						\hline
-						A_1 & a_{11} & \ldots & a_{1m} \\
-						\vdots & \vdots & \ddots & \vdots \\
-						A_n & a_{n1} & \ldots & a_{nm} \\
-						\end{array} \]
-						<p>Donde \(a_{ij}\) representa la evaluación de la alternativa \(i\) con respecto al criterio \(j\).</p>
-					</section>
-			
-		
-					 
-									<section>
-										<h1>Método de Ponderación Lineal</h1>
-										<p>Una Introducción Simple al MCDM </p>
-									</section>
-						
-									<section>
-										<h2>Introducción al Método de Ponderación Lineal</h2>
-										<p>Es una técnica para tomar decisiones basadas en múltiples criterios.</p>
-										<p>Combina las calificaciones de cada alternativa bajo diferentes criterios ponderados para obtener un puntaje total.</p>
-										<p>Facilita la comparación directa entre alternativas.</p>
-									</section>
-						
-									<section>
-										<h2>Ejemplo: Definición de Alternativas y Criterios</h2>
-										<p>Supongamos que queremos decidir entre dos teléfonos: A y B. Consideramos tres criterios: precio, cámara, y batería.</p>
-									</section>
-						
-									<section>
-										<h2>Asignación de Pesos</h2>
-										<p>Los pesos reflejan la importancia de cada criterio:</p>
-										<ul>
-											<li>Precio: \(0.5\)</li>
-											<li>Cámara: \(0.3\)</li>
-											<li>Batería: \(0.2\)</li>
-										</ul>
-									</section>
-						
-									<section>
-										<h2>Calificación de Alternativas</h2>
-										<table>
-											<tr>
-												<th>Criterio</th>
-												<th>Peso</th>
-												<th>Teléfono A</th>
-												<th>Teléfono B</th>
-											</tr>
-											<tr>
-												<td>Precio</td>
-												<td>\(0.5\)</td>
-												<td>8</td>
-												<td>6</td>
-											</tr>
-											<tr>
-												<td>Cámara</td>
-												<td>\(0.3\)</td>
-												<td>7</td>
-												<td>9</td>
-											</tr>
-											<tr>
-												<td>Batería</td>
-												<td>\(0.2\)</td>
-												<td>9</td>
-												<td>7</td>
-											</tr>
-										</table>
-									</section>
-						
-									<section>
-										<h2>Cálculo de Puntajes</h2>
-										<p>Teléfono A: \( (8 \times 0.5) + (7 \times 0.3) + (9 \times 0.2) = 7.9 \)</p>
-										<p>Teléfono B: \( (6 \times 0.5) + (9 \times 0.3) + (7 \times 0.2) = 7.1 \)</p>
-									</section>
-						
-									<section>
-										<h2>Conclusión</h2>
-										<p>El Teléfono A, con un puntaje total de 7.9, es preferible al Teléfono B.</p>
-									</section>
-							
-					
-
-				<section data-transition="zoom" data-background="#003865">
-					<h3>La universidad</h3>
-					<div class="r-stack">
-						<p class="fragment fade-in-then-out">Excelente planta docente</p>
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/styles/multimedia_image/public/multimedia/images/gallery/bv7b1230-2.jpg?itok=al5_xeZT" width="700" height="450" class="fragment fade-in-then-out">	
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/node/wysiwyg/sala-bloomberg-utadeo-modelo-de-alternancia-1.jpg" width="700" height="450" class="fragment fade-in-then-out">	
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/styles/especial_980x670/public/multimedia/images/gallery/ingreso-a-utadeo-2021-alternancia-latadeotequierebien.utadeo.9.jpg?itok=7LEN7UKK" width="700" height="450" class="fragment fade-in-then-out">	
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/node/multimedia/image_cover/exp03.png" width="700" height="450" class="fragment fade-in-then-out">	
-						
-						
-
-						
-
-						
-						<p class="fragment fade-in-then-out">Grupos de investigación de primer nivel</p>
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/node/news/field_images/penn_state_foto.jpg" width="500" height="350" class="fragment fade-in-then-out">
-						<img src="https://www.unicamp.br/unicamp/sites/default/files/field/image/ju_647_p3_a_b_web.jpg#overlay-context=ju/647/inteligente-e-mais-barato" width="500" height="350" class="fragment fade-in-then-out">
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/node/wysiwyg/webnota_entrevista_andres_aristizabal_energia_fotovoltaica_choco_20170725_002.jpg" width="500" height="350" class="fragment fade-in-then-out">
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/node/wysiwyg/whatsapp_image_2021-06-29_at_10.32.08_1.jpeg" width="500" height="350" class="fragment fade-in-then-out">
-
-						
-						
-
-				
-						
-						
-
-
-
-						
-
-
-						<p class="fragment fade-in-then-out">Innovación pedagógica de frontera</p>
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/styles/multimedia_image/public/multimedia/images/gallery/bv7b1417-2.jpg?itok=FRFZD_n6" width="750" height="500" class="fragment fade-in-then-out">
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/collections/node/gallery/field_image/salones.mod_.7.utadeo.1.jpg" width="750" height="500" class="fragment fade-in-then-out">
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/collections/node/gallery/field_image/aula.colaborativa.utadeo.4.jpg" width="750" height="500" class="fragment fade-in-then-out">
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/collections/node/gallery/field_image/biblioteca.utadeo.az_.6.jpg" width="750" height="500" class="fragment fade-in-then-out">
-
-				
-						
-
-
-						
-						<p class="fragment fade-in-then-out">Adaptación de estrategias pedagógicas al reto actual mundial.</p>
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/node/wysiwyg/ingreso-utadeo-modelo-de-alternancia-2.jpg" width="750" height="500" class="fragment fade-in-then-out">
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/styles/multimedia_album/public/multimedia/images/gallery/ingreso-a-utadeo-2021-alternancia-latadeotequierebien.utadeo.7_0.jpg?itok=JxzHhY8V" width="750" height="500" class="fragment fade-in-then-out">
-						<img src="https://www.utadeo.edu.co/sites/tadeo/files/styles/multimedia_image/public/multimedia/images/gallery/graduandos.posgrado.junio_.2021.utadeo.11.jpg?itok=v4n4zV5U" width="750" height="500" class="fragment fade-in-then-out">
-
-
-						
-					
-					</div>
-
-					
-
-
-				</section>
-
-				<section data-background-iframe="https://view.genial.ly/61540f5409aea70d96bdafb3" data-background-interactive>
-					
-				</section>
-							
-
-				<section data-transition="zoom">
-					<h3>La FACULTAD Y EL ÁREA</h3>
-					<div id="tree">
-				</div>
-					 
-
-				</section>
-				<section data-markdown style="font-size: medium;" >
-				
-				
-					<script type="text/template" >
-						# GRUPOS DE INVESTIGACION DE LA FACULTAD   🎓
-
-						
-						| Grupo                                              | Clasificación  |
-						|----------------------------------------------------|---------------------------|
-						| Genética, Biología Molecular & Bioinformática      | A                         |
-						| Grupo de Limnología y Ecología Acuática            | A                         |
-						| Ingeniería de Procesos y Sistemas Inteligentes     | A1                        |
-						| Modelado y Simulación de Sistemas                  | A1                        |
-						| Dinámica y Manejo de Ecosistemas Marinos Costeros  | A1                        |
-						| Modelado y simulación en ingeniería industrial     | A1                        |
-						| Fundamentos y Didácticas de las Ciencias           | A                         |
-						| Energía, Medio Ambiente y Desarrollo               | A                         |
-						|  ID&SI                                             | A1                        |
-						| Bioprospección y Biotecnología                     | B                         |
-					</script>
-			
-				</section>
-
-				<section>
-					<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQt7Gx9YVkoK4MkPsSwFzln7WaSwzohL7gmfJkCKHPsK0p1E17rFuPLliriP8PSAQcrbaSJP850RwAH/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-				</section>
-				
-				<section data-background-color="#003865">
-						<h3>DATOS DEL MERCADO LABORAL</h3>
-						<div style="height:480px">
-										<canvas data-chart="pie">
-						Ingenierías, Sistemas y automatizacion 11019, Industrial 10441, Electronica y Energia 4074
-						Ofertas laborales, 11019, 10441, 4074
-						</canvas>
-						</div>
-						<small>Ofertas laborales en 2020 en elempleo.com</small>
-
-				</section>
-				
-		
-								
-
-				<section data-background-iframe="https://www.semana.com/educacion/articulo/solo-se-esta-formando-el-22-de-los-ingenieros-energeticos-que-necesita-el-pais/202137/" 	data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color:#003865; color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-						<h2 style="color: floralwhite;">CARRERAS EN TECNOLOGIA</h2>
-						<p>Solo se está formando el 22 % de los ingenieros energéticos que necesita el país.</p>
-					</div>
-				</section>
-				<section data-transition="zoom">
-					<h3>CAMBIO EN PRECIOS POR CATEGORIAS EN 2021</h3>
-										<div class="tweet" data-src="https://twitter.com/BLS_gov/status/1439608972168814596"></div>
-				</section>
-				<section>
-					<h3>LOS TRABAJOS QUE MAS CRECERAN EN 10 AÑOS</h3>
-				
-
-			
-					  <img  src="https://www.visualcapitalist.com/wp-content/uploads/2021/09/fastest-growing-jobs-next-decade.jpg" width="600" height="740">
-				
-					
-				</section>
-											
-				<section data-transition="zoom">
-					<h3>TOP 10 HABILIDADES LABORALES PARA 2025</h3>
-					<div class="tweet" data-src="https://twitter.com/wef/status/1442987634565869568"></div>
-							</section>
-				<section data-transition="zoom">
-					<h3>CARRERAS EN TECNOLOGIA</h3>
-					<div class="tweet" data-src="https://twitter.com/Alvaro_MontesG/status/1228658621891989504"></div>
-				</section >
-
-				<section data-transition="zoom">
-					<h3>CARRERAS EN TECNOLOGIA</h3>
-					<div class="tweet" data-src="https://twitter.com/BLS_gov/status/1103728269982134279"></div>
-				</section>
-								
-
-				<section data-transition="zoom">
-					<h3>CARRERAS EN TECNOLOGIA</h3>
-					<div class="tweet" data-src="https://twitter.com/GorritiMikel/status/1351568090585247749"></div>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="code-title">Simulando un sistema de inventario simple en Python</h2>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="1|2-4|5-8|9-10|11-14|15-20"><script type="text/template">
-						class almacen:
-						def __init__(self, nivel_inventario):
-						  self.i = nivel_inventario
-						  self.revisa_inventario(0)
-						def orden(self, Q, tiempo):
-						  self.revisa_inventario(tiempo)
-						  self.i += Q
-						  self.revisa_inventario(tiempo) # las ordenes son recibidas al iniciar cada periodo
-						def disponible(self):
-						  return max(0, self.i)
-						def emision(self, demanda, tiempo):
-						  self.revisa_inventario(tiempo)
-						  self.i = self.i-demanda
-						  self.revisa_inventario(tiempo+1) # la demanda se realiza al final de un período
-						def revisa_inventario(self, tiempo):
-						  try:
-							self.niveles.append([tiempo, self.i])
-							self.en_mano.append([tiempo, self.disponible()])
-						  except AttributeError:
-							self.niveles, self.en_mano = [[0, self.i]], [[0, self.disponible()]]
-					</script></code></pre>
-					
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="code-title">Funcion para graficar</h2>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="1-3|4-10"><script type="text/template">
-							import matplotlib.pyplot as plt
-							import numpy as np
-							import pandas as pd
-							def grafica_inventario(valores, etiqueta):
-							df=pd.DataFrame({'x':np.array(valores)[:,0], 'fx':np.array(valores)[:,1]})
-							# grafique
-							plt.xticks(range(len(valores)),range(1,len(valores)+1))
-							plt.xlabel("$t$")
-							plt.ylabel("items")
-							plt.plot( 'x', 'fx', data=df,linestyle='-', marker='o',label=etiqueta)
-					</script></code></pre>
-					
-				</section>
-
-				<section data-auto-animate >
-					<h2> Ejemplo 📚 </h2>
-					<span style="text-align: justify" class="fragment fade-left">
-			
-						</span>
-
-									  
-					  </justify></small></p>
-					  <pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="1-4|5-8|9-13"><script type="text/template">
-						inv=100
-						dep=almacen(inv)
-						demanda=100/6
-						N=12
-						for t in range(N):
-						  if(t==6):
-							dep.orden(100,t)
-						  dep.emision(demanda,t)
-						grafica_inventario(dep.niveles,"nivel de inventario")
-						plt.xlabel("$t$ periodos de 6 meses")
-						plt.axhline(60,color='r',label='reorden',linestyle='--')
-						plt.legend()
-						plt.show()
-						</script></code></pre>
-						<img src="https://github.com/jorgeiv500/Logistica/blob/master/reorden.png?raw=true" alt="reveal.js logo" style="height: 200px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
-					
-				
-				</section>
-			
-				
+                <section data-transition="zoom">
+                    <h2>Problema del Viajante de Comercio (TSP)</h2>
+                    <p>Explicación de qué es el TSP y su importancia en la optimización de rutas.</p>
+                </section>
+                <!-- Diapositiva 2: TSP Código OR-Tools -->
+                <section>
 					<section data-auto-animate>
-							<h2 data-id="code-title">DESARROLLO DE VIDEOJUEGOS🎮</h2>
-							<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="1,2|3-11|13-19|21-26|28-34|37-43|45-52|54-61|63,64|156-167|175-184"><script type="text/template">
-								import pygame, sys
-								import random
+						<h2 data-id="code-title">TSP de 5 puntos</h2>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="1-2|4-15|16-18|20-33|35-68"><script type="text/template">
+							from ortools.constraint_solver import routing_enums_pb2
+							from ortools.constraint_solver import pywrapcp
+							
+							def create_data_model():
+								"""Stores the data for the problem."""
+								data = {}
+								# Matriz de distancias para 5 puntos en Bogotá
+								# Las distancias deben ser reemplazadas con valores reales
+								data["distance_matrix"] = [
+									[0, 10, 20, 30, 40],  # Distancias desde el punto 0
+									[10, 0, 15, 25, 35],  # Distancias desde el punto 1
+									[20, 15, 0, 35, 45],  # Distancias desde el punto 2
+									[30, 25, 35, 0, 20],  # Distancias desde el punto 3
+									[40, 35, 45, 20, 0],  # Distancias desde el punto 4
+								]
+								data["num_vehicles"] = 1
+								data["depot"] = 0
+								return data
+							
+							def print_solution(manager, routing, solution):
+								"""Prints solution on console."""
+								print(f"Objective: {solution.ObjectiveValue()} units")
+								index = routing.Start(0)
+								plan_output = "Route for vehicle 0:\n"
+								route_distance = 0
+								while not routing.IsEnd(index):
+									plan_output += f" {manager.IndexToNode(index)} ->"
+									previous_index = index
+									index = solution.Value(routing.NextVar(index))
+									route_distance += routing.GetArcCostForVehicle(previous_index, index, 0)
+								plan_output += f" {manager.IndexToNode(index)}\n"
+								print(plan_output)
+								plan_output += f"Route distance: {route_distance} units\n"
+							
+							def main():
+								"""Entry point of the program."""
+								# Instantiate the data problem.
+								data = create_data_model()
+							
+								# Create the routing index manager.
+								manager = pywrapcp.RoutingIndexManager(
+									len(data["distance_matrix"]), data["num_vehicles"], data["depot"]
+								)
+							
+								# Create Routing Model.
+								routing = pywrapcp.RoutingModel(manager)
+							
+								def distance_callback(from_index, to_index):
+									"""Returns the distance between the two nodes."""
+									from_node = manager.IndexToNode(from_index)
+									to_node = manager.IndexToNode(to_index)
+									return data["distance_matrix"][from_node][to_node]
+							
+								transit_callback_index = routing.RegisterTransitCallback(distance_callback)
+							
+								# Define cost of each arc.
+								routing.SetArcCostEvaluatorOfAllVehicles(transit_callback_index)
+							
+								# Setting first solution heuristic.
+								search_parameters = pywrapcp.DefaultRoutingSearchParameters()
+								search_parameters.first_solution_strategy = (
+									routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC
+								)
+							
+								# Solve the problem.
+								solution = routing.SolveWithParameters(search_parameters)
+							
+								# Print solution on console.
+								if solution:
+									print_solution(manager, routing, solution)
+							
+							if __name__ == "__main__":
+								main()
+							
+						</script></code></pre>
+                </section>
+                <!-- Diapositiva 3: TSP Ejemplo Práctico -->
+                <section>
+                    <p>Ejemplo práctico cvrp tw</p>
+                </section>
+  
+				<section data-auto-animate>
+					<h2 data-id="code-title">TSP de 5 puntos</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="1-2|4-15|16-18|20-33|35-68"><script type="text/template">
+						from __future__ import print_function
 
-								ANCHO_VENTANA   = 640
-								ALTO_VENTANA    = 480
-								COLOR_NEGRO     = (  20,  14,   8 )
-								COLOR_BLANCO    = ( 240, 240, 242 )
-								COLOR_AMARILLO  = ( 240, 200,  20 )
-								COLOR_ROJO      = ( 251,  51, 102 )
-								COLOR_VERDE     = (   0, 255, 153 )
-								COLOR_AZUL      = ( 102, 255, 255 )
-
-								COLOR_FONDO     = COLOR_NEGRO
-								COLOR_ESCENARIO = COLOR_AMARILLO
-								COLOR_BOLA      = COLOR_VERDE
-								COLOR_PALA_1    = COLOR_AZUL
-								COLOR_PALA_2    = COLOR_ROJO
-								COLOR_SCORE_1   = COLOR_PALA_1
-								COLOR_SCORE_2   = COLOR_PALA_2
-
-								BALL_RADIUS = 20
-								PAD_WIDTH = 8
-								PAD_HEIGHT = 80
-								HALF_PAD_WIDTH = PAD_WIDTH // 2
-								HALF_PAD_HEIGHT = PAD_HEIGHT // 2
-								PADDLE_SPEED = 4
-
-								LEFT = False
-								RIGHT = True
-
-								SCORE1_POS = (ANCHO_VENTANA//2 - 70, 50)
-								SCORE2_POS = (ANCHO_VENTANA//2 + 50, 50)
-
-								reloj = pygame.time.Clock()
-
-
-								def draw_text(texto, posicion, color):
-								global canvas
-								superficie = text_font.render(texto, True, color)
-								canvas.blit(superficie, posicion)
-
-								def nuevo_juego():
-								global pala_1_pos, pala_2_pos, pala_1_incremento_y, pala_2_incremento_y, score_1, score_2
-										
-								pala_1_pos = [0, ALTO_VENTANA // 2 - HALF_PAD_HEIGHT]
-								pala_2_pos = [ANCHO_VENTANA - PAD_WIDTH, ALTO_VENTANA // 2 - HALF_PAD_HEIGHT]
-								pala_1_incremento_y = 0
-								pala_2_incremento_y = 0
-								score_1 = 0
-								score_2 = 0
-
-								lanza_bola(RIGHT)
-
-								def lanza_bola(direccion):
-								global ball_pos, ball_vel
+						from functools import partial
+						from six.moves import xrange
+						
+						from ortools.constraint_solver import pywrapcp
+						from ortools.constraint_solver import routing_enums_pb2
+						import math
+						import time
+						start_time = time.time()
+						###########################
+						# Problem Data Definition #
+						###########################
+						
+							# Locations in block unit
+						def create_data_model():
+							"""Stores the data for the problem"""
+							data={}
+							# Locations in block unit
+							_locations = \
+							[ (4.644074,-74.120507),
+							  (4.638160,-74.114188),
+							  (4.640930,-74.116914),
+							  (4.675887,-74.117909),
+							  (4.621920,-74.103876),
+							  (4.666847,-74.141226),
+							  (4.597748,-74.145742),
+							  (4.608708,-74.077771),
+							  (4.610090,-74.090002),
+							  (4.588141,-74.106311),
+							  (4.597977,-74.133829),
+							  (4.609671,-74.098310),
+							  (4.612365,-74.085213),
+							  (4.661076,-74.075602),
+							  (4.654545,-74.115600),
+							  (4.596786,-74.095874),
+							  (4.617141,-74.101125),
+							  (4.588499,-74.154815),
+							  (4.613504,-74.137859),
+							  (4.606171,-74.075720),
+							  (4.601200,-74.080275),
+							  (4.602244,-74.085227),
+							  (4.665044,-74.059959),
+							  (4.587774,-74.099263),
+							  (4.606273,-74.087870)  
+											  ]
+						
+						
+							
+							data['locations'] = [(l[0] * 114, l[1] * 80) for l in _locations]
+							data['demands'] = [0,391,71,36,2519,248,478,589,1105,55,237,235,908,1473,24,144,181,564,764,1386,4034,669,361,1113,4271]
+							data['vehicle_capacity'] = [8500,5400,5400,5400,5400,4600,4200,4200,4000,4000,4000,4000,3500]
+							data['num_vehicles'] = 13
+							data['num_locations'] = len(data['locations'])
+							data['time_windows'] = \
+								   [(0,0),
+									(0,50),(30,100),
+									(60,80),(120,160),
+									(150,270),(210,227),
+									(180,200),(210,235),
+									(210,225),(240,255),
+									(240,255),(240,265),
+									(240,270),(240,255),
+									(270,285),(270,285),
+									(270,290),(270,295),
+									(300,330),(300,345),
+									(300,320),(330,345),
+									(330,355),(360,405)] # 15, 16# 15, 16
+						   
+							data['time_per_demand_unit'] = 0
+							data['vehicle_speed'] = 240  # Travel speed: 5km/h converted in m/min
+							data['depot'] = 0
+							return data
+						
+						
+						#######################
+						# Problem Constraints #
+						#######################
+							
+						def manhattan_distance(position_1, position_2):
+							rad=math.pi/180
+							lat1=position_1[0]
+							lat2=position_2[0]
+							lon1=position_1[1]
+							lon2=position_2[1]
+							dlat=position_1[0]-position_2[0]
+							dlon=position_1[1]-position_2[1]
+							R=6372.795477598
+							a=(math.sin(rad*dlat/2))**2 + math.cos(rad*lat1)*math.cos(rad*lat2)*(math.sin(rad*dlon/2))**2
+							distancia=2*R*math.asin(math.sqrt(a))
+							return distancia
+							
 								
-								ball_pos = [ANCHO_VENTANA // 2, ALTO_VENTANA // 2]
-								x_dir = random.randint(2, 4) # 2 ó 3
-								if direccion == LEFT:
-									x_dir = -x_dir # -2 ó -3
-								ball_vel = [ x_dir, random.randint(-3, -1) ]
-
-								def key_down (tecla):
-								global pala_1_incremento_y, pala_2_incremento_y
-								
-								if tecla == pygame.K_w:
-									pala_1_incremento_y = -PADDLE_SPEED
-									
-								if tecla == pygame.K_s:
-									pala_1_incremento_y = PADDLE_SPEED
-
-								if tecla == pygame.K_UP:
-									pala_2_incremento_y = -PADDLE_SPEED
-								if tecla == pygame.K_DOWN:
-									pala_2_incremento_y = PADDLE_SPEED
-									
-								def key_up (tecla):
-								global pala_1_incremento_y, pala_2_incremento_y
-								if tecla == pygame.K_w or tecla == pygame.K_s:
-									pala_1_incremento_y = 0
-								if tecla == pygame.K_UP or tecla == pygame.K_DOWN:
-									pala_2_incremento_y = 0
-									
-								
-								def draw():
-								global ball_pos, pala_1_pos, pala_2_pos, pala_1_incremento_y, pala_2_incremento_y, score_1, score_2
-
-								# Bola limite derecho
-								if ball_pos[0] + BALL_RADIUS > ANCHO_VENTANA - PAD_WIDTH:
-									# Bola se ha salido del limite y pierde el jugador 2
-									if ball_pos[1] + BALL_RADIUS < pala_2_pos[1] or ball_pos[1] - BALL_RADIUS > pala_2_pos[1] + PAD_HEIGHT:
-									score_1 += 1
-									lanza_bola(LEFT)
+						def create_distance_evaluator(data):
+							"""Creates callback to return distance between points."""
+							_distances = {}
+							# precompute distance between location to have distance callback in O(1)
+							for from_node in xrange(data['num_locations']):
+								_distances[from_node] = {}
+								for to_node in xrange(data['num_locations']):
+									if from_node == to_node:
+										_distances[from_node][to_node] = 0
 									else:
-									# Bola rebota con la pala2
-									ball_vel[0] = -ball_vel[0]
-									
-								# Bola limite izquierdo
-								if ball_pos[0] - BALL_RADIUS < PAD_WIDTH:
-									# Bola se ha salido del limite?
-									if ball_pos[1] + BALL_RADIUS < pala_1_pos[1] or ball_pos[1] - BALL_RADIUS > pala_1_pos[1] + PAD_HEIGHT:
-									score_2 += 1
-									lanza_bola(RIGHT)
+										_distances[from_node][to_node] = (manhattan_distance(
+											data['locations'][from_node], data['locations'][to_node]))
+						
+							def distance_evaluator(manager, from_node, to_node):
+								"""Returns the manhattan distance between the two nodes"""
+								return _distances[manager.IndexToNode(from_node)][manager.IndexToNode(
+									to_node)]
+						
+							return distance_evaluator
+						
+						
+						def create_demand_evaluator(data):
+							"""Creates callback to get demands at each location."""
+							_demands = data['demands']
+						
+							def demand_evaluator(manager, node):
+								"""Returns the demand of the current node"""
+								return _demands[manager.IndexToNode(node)]
+						
+							return demand_evaluator
+						
+						
+						def add_capacity_constraints(routing, data, demand_evaluator_index):
+							"""Adds capacity constraint"""
+							capacity = 'Capacity'
+							routing.AddDimensionWithVehicleCapacity(
+								demand_evaluator_index,
+								0,  # null capacity slack
+								data['vehicle_capacity'],
+								True,  # start cumul to zero
+								capacity)
+						
+						
+						def create_time_evaluator(data):
+							"""Creates callback to get total times between locations."""
+						
+							def service_time(data, node):
+								"""Gets the service time for the specified location."""
+								return data['demands'][node] * data['time_per_demand_unit']
+						
+							def travel_time(data, from_node, to_node):
+								"""Gets the travel times between two locations."""
+								if from_node == to_node:
+									travel_time = 0
+								else:
+									travel_time = manhattan_distance(data['locations'][from_node], data[
+										'locations'][to_node]) / data['vehicle_speed']
+								return travel_time
+						
+							_total_time = {}
+							# precompute total time to have time callback in O(1)
+							for from_node in xrange(data['num_locations']):
+								_total_time[from_node] = {}
+								for to_node in xrange(data['num_locations']):
+									if from_node == to_node:
+										_total_time[from_node][to_node] = 0
 									else:
-									# Bola rebota con la pala1
-									ball_vel[0] = -ball_vel[0]      
-									
-								# Actualizar posicion de la bola
-								ball_pos[0] = ball_pos[0] + ball_vel[0] # x
-								ball_pos[1] = ball_pos[1] + ball_vel[1] # y
+										_total_time[from_node][to_node] = int(
+											service_time(data, from_node) + travel_time(
+												data, from_node, to_node))
+						
+							def time_evaluator(manager, from_node, to_node):
+								"""Returns the total time between the two nodes"""
+								return _total_time[manager.IndexToNode(from_node)][manager.IndexToNode(
+									to_node)]
+						
+							return time_evaluator
+						
+						
+						def add_time_window_constraints(routing, manager, data, time_evaluator_index):
+							"""Add Global Span constraint"""
+							time = 'Time'
+							horizon = 500
+							routing.AddDimension(
+								time_evaluator_index,
+								horizon,  # allow waiting time
+								horizon,  # maximum time per vehicle
+								False,  # don't force start cumul to zero since we are giving TW to start nodes
+								time)
+							time_dimension = routing.GetDimensionOrDie(time)
+							# Add time window constraints for each location except depot
+							# and 'copy' the slack var in the solution object (aka Assignment) to print it
+							for location_idx, time_window in enumerate(data['time_windows']):
+								if location_idx == 0:
+									continue
+								index = manager.NodeToIndex(location_idx)
+								time_dimension.CumulVar(index).SetRange(time_window[0], time_window[1])
+								routing.AddToAssignment(time_dimension.SlackVar(index))
+							# Add time window constraints for each vehicle start node
+							# and 'copy' the slack var in the solution object (aka Assignment) to print it
+							for vehicle_id in xrange(data['num_vehicles']):
+								index = routing.Start(vehicle_id)
+								time_dimension.CumulVar(index).SetRange(data['time_windows'][0][0],
+																		data['time_windows'][0][1])
+								routing.AddToAssignment(time_dimension.SlackVar(index))
+								# Warning: Slack var is not defined for vehicle's end node
+								#routing.AddToAssignment(time_dimension.SlackVar(self.routing.End(vehicle_id)))
+						
+						
+						###########
+						# Printer #
+						###########
+						def print_solution(data, manager, routing, assignment):  # pylint:disable=too-many-locals
+							"""Prints assignment on console"""
+							print('Objective: {}'.format(assignment.ObjectiveValue()))
+							total_distance = 0
+							total_load = 0
+							total_time = 0
+							capacity_dimension = routing.GetDimensionOrDie('Capacity')
+							time_dimension = routing.GetDimensionOrDie('Time')
+							for vehicle_id in xrange(data['num_vehicles']):
+								index = routing.Start(vehicle_id)
+								plan_output = 'Route for vehicle {}:\n'.format(vehicle_id)
+								distance = 0
+								while not routing.IsEnd(index):
+									load_var = capacity_dimension.CumulVar(index)
+									time_var = time_dimension.CumulVar(index)
+									slack_var = time_dimension.SlackVar(index)
+									plan_output += ' {0} Load({1}) Time({2},{3}) Slack({4},{5}) ->'.format(
+										manager.IndexToNode(index),
+										assignment.Value(load_var),
+										assignment.Min(time_var),
+										assignment.Max(time_var),
+										assignment.Min(slack_var), assignment.Max(slack_var))
+									previous_index = index
+									index = assignment.Value(routing.NextVar(index))
+									distance += routing.GetArcCostForVehicle(previous_index, index,
+																			 vehicle_id)
+								load_var = capacity_dimension.CumulVar(index)
+								time_var = time_dimension.CumulVar(index)
+								slack_var = time_dimension.SlackVar(index)
+								plan_output += ' {0} Load({1}) Time({2},{3})\n'.format(
+									manager.IndexToNode(index),
+									assignment.Value(load_var),
+									assignment.Min(time_var), assignment.Max(time_var))
+								plan_output += 'Distance of the route: {0}m\n'.format(distance)
+								plan_output += 'Load of the route: {}\n'.format(
+									assignment.Value(load_var))
+								plan_output += 'Time of the route: {}\n'.format(
+									assignment.Value(time_var))
+								print(plan_output)
+								total_distance += distance
+								total_load += assignment.Value(load_var)
+								total_time += assignment.Value(time_var)
+							print('Total Distance of all routes: {0}m'.format(total_distance))
+							print('Total Load of all routes: {}'.format(total_load))
+							print('Total Time of all routes: {0}min'.format(total_time))
+						
+						
+						########
+						# Main #
+						########
+						def main():
+							"""Entry point of the program"""
+							# Instantiate the data problem.
+							data = create_data_model()
+							print(data['locations'])
+							# Create the routing index manager
+							manager = pywrapcp.RoutingIndexManager(data['num_locations'],
+																   data['num_vehicles'], data['depot'])
+						
+							# Create Routing Model
+							routing = pywrapcp.RoutingModel(manager)
+						
+							# Define weight of each edge
+							distance_evaluator_index = routing.RegisterTransitCallback(
+								partial(create_distance_evaluator(data), manager))
+							routing.SetArcCostEvaluatorOfAllVehicles(distance_evaluator_index)
+						
+							# Add Capacity constraint
+							demand_evaluator_index = routing.RegisterUnaryTransitCallback(
+								partial(create_demand_evaluator(data), manager))
+							add_capacity_constraints(routing, data, demand_evaluator_index)
+						
+							# Add Time Window constraint
+							time_evaluator_index = routing.RegisterTransitCallback(
+								partial(create_time_evaluator(data), manager))
+							add_time_window_constraints(routing, manager, data, time_evaluator_index)
+						
+							# Setting first solution heuristic (cheapest addition).
+							search_parameters = pywrapcp.DefaultRoutingSearchParameters()
+							search_parameters.first_solution_strategy = (
+								routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC)  # pylint: disable=no-member
+							# Solve the problem.
+							assignment = routing.SolveWithParameters(search_parameters)
+							print_solution(data, manager, routing, assignment)
+						
+						
+						if __name__ == '__main__':
+							main()
+						print("--- %s seconds ---" % (time.time() - start_time))
+						
+						
+					</script></code></pre>
+			</section>
 
-								# Comprobar límites superior e inferior de la bola y hacer que rebote
-								if ball_pos[1] <= BALL_RADIUS or ball_pos[1] >= ALTO_VENTANA - BALL_RADIUS:
-									ball_vel[1] = -ball_vel[1]
-
-								pala_1_pos[1] += pala_1_incremento_y
-								pala_2_pos[1] += pala_2_incremento_y
-								
-								pygame.draw.line(canvas, COLOR_ESCENARIO,
-												(ANCHO_VENTANA // 2, 0),
-												(ANCHO_VENTANA // 2, ALTO_VENTANA),
-												1)
-								
-								pygame.draw.line(canvas, COLOR_ESCENARIO,
-												(PAD_WIDTH, 0),
-												(PAD_WIDTH, ALTO_VENTANA),
-												1)
-
-								pygame.draw.line(canvas, COLOR_ESCENARIO,
-												(ANCHO_VENTANA - PAD_WIDTH, 0),
-												(ANCHO_VENTANA - PAD_WIDTH, ALTO_VENTANA),
-												1)
-
-								pygame.draw.rect(canvas, COLOR_PALA_1,
-												(pala_1_pos[0], pala_1_pos[1], PAD_WIDTH, PAD_HEIGHT) )
-
-								pygame.draw.rect(canvas, COLOR_PALA_2,
-												(pala_2_pos[0], pala_2_pos[1], PAD_WIDTH, PAD_HEIGHT) )
-
-								pygame.draw.circle(canvas, COLOR_BOLA,
-													ball_pos,
-													20 )
-
-								draw_text(str(score_1), SCORE1_POS, COLOR_SCORE_1)
-								draw_text(str(score_2), SCORE2_POS, COLOR_SCORE_2)
-
-								pygame.init()
-								text_font = pygame.font.SysFont("Arial", 48)
-
-
-								nuevo_juego()
-
-								canvas = pygame.display.set_mode ( (ANCHO_VENTANA, ALTO_VENTANA) )
-								pygame.display.set_caption ('UTADEO - Pong')
-
-								#######################################################################
-								#       Bucle de Juego                                                #
-								#######################################################################
-								running = True
-
-								while running:
-								for evento in pygame.event.get():
-									#
-									# Cierre de ventana
-									#
-									if evento.type == pygame.QUIT:
-									running = False
-
-									if evento.type == pygame.KEYDOWN:
-									key_down(evento.key)
-									
-									if evento.type == pygame.KEYUP:
-									key_up(evento.key)
-
-								canvas.fill( COLOR_NEGRO )
-
-								draw()
-								
-								pygame.display.update()
-								
-								reloj.tick(60)
-								
-								pygame.quit()
-								sys.exit(0)
-							</script></code></pre>
-					</section>
-					<section data-background-iframe="https://www.youtube.com/embed/RfpdZb41FZI" data-background-interactive>
-						<h2 style="color: #fff;">El resultado!🎮 </h2>
-					</section>
-			
-				<section data-transition="zoom">
-					<h3>NOTAS DIVERTIDAS EN INGENIERIA</h3>
- 					<div class="tweet" data-src="https://twitter.com/IntEngineering/status/1442141922391302151"></div>
-				</section>
-				
-				<section data-transition="zoom">
-					<h3>NOTAS DIVERTIDAS EN INGENIERIA</h3>
-					<div class="tweet" data-src="https://twitter.com/IntEngineering/status/1438736976102965252"></div>
-				</section>
-				
-				<section data-transition="zoom">
-					<h3>NOTAS DIVERTIDAS EN INGENIERIA</h3>
-					<div class="tweet" data-src="https://twitter.com/IntEngineering/status/1428809057528422401"></div>
-				</section>
-					
-				
-				<section data-transition="zoom">
-					<h3>NOTAS DIVERTIDAS EN INGENIERIA</h3>
-				 	<div class="tweet" data-src="https://twitter.com/IntEngineering/status/1442964836166557696"></div>
-				</section>
-				
-				
-				
-			  
 
 				<section data-transition="slide" data-background="#003865">
 
@@ -988,7 +686,7 @@
 
 					
 					
-					<img src="https://expeditiorepositorio.utadeo.edu.co/themes/Tadeo/images/cliente/logo-utadeo.png" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				
 					
 				</section>
 				
